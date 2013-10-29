@@ -1,35 +1,35 @@
-/* Stylesheet */
-body {
-       background: #000;
-	  
-}
+/*{
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right:10px;*/
+	
 
-header {
-       
-}
-
-nav {
-        
-}
-
-blockquote {
-        
-}
-
-footer {
-        
-}
-
-section {
-        
-}
-
-.container_12 {
-        background: #FFF;
-}
-p, h3{
-	font-family: 'Belleza', sans-serif;
 }
 h3{
-	text-transfrom: uppercase;
+	color: blue;
+}
+li{
+  background: black;
+  display: inline;
+  height:50px;
+  list-style: none;
+  margin: 20px 10px;
+  padding: 20px 10px;
+}
+#nav1{
+  color: white;
+  font: 24px bold sans-serif italic;
+  letter-spacing: 2px;
+  text-transform: uppercase; 
+  text-decoration: none;
+}
+li:hover {
+  background: blue;
+  color:#fff;
+  transition:background .5s;
+}
+#img{
+	
 }
