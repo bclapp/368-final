@@ -1,7 +1,35 @@
 /* Stylesheet */
+
 /*header bar*/
 
 @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One|Arbutus+Slab|Belgrano|Crete+Round);
+
+
+#main-nav {
+	float: right;
+	display: block;
+	margin-left: 0px;
+}
+
+#main-nav ul li {
+
+    position: relative;
+    max-width: 1000px;
+    opacity: 1;
+    text-align: center;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+   
+}
+
+#main-nav ul li a {
+	
+	display: block;
+	padding: 0px 20px;
+	color: white;
+}
+
 body{
 	zoom: 95%;
 	height: 100%;
@@ -22,6 +50,12 @@ margin-right: auto;
 min-width: 980px;
 
 }
+
+#clock {
+	color: white;
+	float: right;
+}
+
 .headname{
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -29,8 +63,12 @@ min-width: 980px;
 	color: #5BA6D9;
 	padding-left: 10px;
 	font-family: 'Alfa Slab One', cursive;
+	display: block;
+	height: 40px;
 }
-.headname:hover{
+
+
+.headname11:hover{
 	color: #1F8AD1;
 	text-shadow: 7px 5px 7px #213542;
 	transition:  .25s;
@@ -44,6 +82,7 @@ min-width: 980px;
 	top: 0;
 	min-width: 980px;
 	padding-bottom: 4px; 
+	padding-bottom: 25px;
 
 
 }
@@ -88,12 +127,7 @@ a{
 	text-decoration: none;
 }
 
-nav{
-	width: 700px;
-	float: right;
 
-	
-}
 nav a{
 	
 	display: block-inline;
@@ -280,4 +314,62 @@ img[src="http://i.imgur.com/fXVKt0P.jpg"]{
   text-align: center;
   text-decoration: none;
   transition: color .1s;
+}
+
+.contents {
+	margin-top: 10px;
+}
+
+
+
+/********************
+MEDIA QUERIES
+*******************/
+
+/* Desktop */
+@media (min-width: 1200px) {
+	
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+	#main-nav ul li {
+		float: none;
+		display: block-inline;
+		text-align: left;
+		padding: 0px;
+	}
+
+	.contents {
+		margin-top: 85px; 
+	}
+
+	.headname {
+		padding-bottom: 12px;
+	}
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+
+
+	#main-nav ul li {
+		float: none;
+		display: block;
+		text-align: left;
+		padding: 0px;
+	}
+
+	.contents {
+		margin-top: 85px; 
+	}
+
+	.headname {
+		padding-bottom: 12px;
+	}
+
+	#bar {
+		padding-bottom: 0px;
+	}
 }
