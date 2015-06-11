@@ -2,47 +2,60 @@
 
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	
-	<title>Learn something</title>
-		
-	<link href="favicon.ico" rel="icon" type="image/x-icon" />
-	<link rel="stylesheet" href="css/gallery.css" />
-	<link rel="stylesheet" href="css/normalize.css" />	
-	<link rel="stylesheet" href="css/styles.css" />
-	
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Brady Clapp</title>
+    
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  
+   <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css">  
+   <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/unsemantic-grid-responsive.css">
+  
 </head>
 <body>
-	
     <div class="container">
 
 
 <!-- HEADER -->		
-		<header class"head" id="bar">
-			
-			<h1>
-				<a href="index.html" class="headname">Brady Clapp</a>
-			</h1>
-			<div>
-			<nav>
-			
-				<ul>
-				 <li id="about"><a href="index.html">About</a></li>
-				  <li id="gallery"><a href="gallery.html">Gallery</a></li>
-				  <li id="contact"><a href="contact.html">Contact</a></li>
-				  <li id="learn"><a href="learn.html">Learn Something!</a></li>
-				</ul>
-			</nav>	
-			</div>
+    <header class="main-header" id="bar">
+      
+      <div class="grid-100">
+      <span>
+      <h1>
+        <a class="headname">Brady Clapp</a>
+      </h1>
+      </span>
+      
 
-		</header>
+      <h1>
+        <a id="clock" class="hide-on-mobile"></a>
+      </h1>
+      
+
+      
+      
+      <nav id="main-nav" class="mobile-grid-100">
+        
+        <ul>
+          <li id="about"><a href="index.html">About</a></li>
+          <li id="gallery"><a href="gallery.html">Portfolio/Downloads</a></li>
+          <li id="contact"><a href="contact.html">Contact</a></li>
+          <li id="learn"><a href="learn.html">Learn Something New!</a></li>
+        </ul>
+      </nav>  
+      
+      </div>
+    </header>
 
 
 		<article>
-			<div>
+			<div class="mobile-grid-50" style="margin-top: 38px;">
 				<h2>Randomaly Generated Wiki pages!</h2>
 				<h3>This will allow you to learn something new everytime this page is opened.</h3>
-			<iframe name="Embedded Frame" src="http://en.wikipedia.org/wiki/Special:Randompage" height="650px" width="960px" align="left" frameborder="1" marginheight="5px" marginwidth="5px"  scrolling="auto">
+			<iframe class="mobile-grid-100" name="Embedded Frame" src="http://en.wikipedia.org/wiki/Special:Randompage" height="650px" width="960px" align="left" frameborder="1" marginheight="5px" marginwidth="5px"  scrolling="auto">
 			</iframe>
 			</div>
 
